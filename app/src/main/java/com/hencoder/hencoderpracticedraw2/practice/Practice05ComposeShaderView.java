@@ -31,7 +31,8 @@ public class Practice05ComposeShaderView extends View {
     }
 
     {
-        setLayerType(LAYER_TYPE_SOFTWARE, null); // 硬件加速下 ComposeShader 不能使用两个同类型的 Shader
+        // 硬件加速下 ComposeShader 不能使用两个同类型的 Shader
+        setLayerType(LAYER_TYPE_SOFTWARE, null);
         Bitmap dst = BitmapFactory.decodeResource(getResources(), R.drawable.batman);
         BitmapShader dstShader = new BitmapShader(dst, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
 
