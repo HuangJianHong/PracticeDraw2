@@ -32,13 +32,16 @@ public class Practice09StrokeCapView extends View {
 
         // 使用 Paint.setStrokeCap() 来设置端点形状
 
-        // 第一个：BUTT
+        // 第一个：BUTT  平头
+        paint.setStrokeCap(Paint.Cap.BUTT);
         canvas.drawLine(50, 50, 400, 50, paint);
 
-        // 第二个：ROUND
+        // 第二个：ROUND  圆头
+        paint.setStrokeCap(Paint.Cap.ROUND);
         canvas.drawLine(50, 150, 400, 150, paint);
 
-        // 第三个：SQUARE
+        // 第三个：SQUARE 方头
+        paint.setStrokeCap(Paint.Cap.SQUARE);
         canvas.drawLine(50, 250, 400, 250, paint);
     }
 }
